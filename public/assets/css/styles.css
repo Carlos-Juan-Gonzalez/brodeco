@@ -95,14 +95,14 @@ html{
 }
 
 #logo img {
+    position: relative;
     display: block;
     margin: 0px auto;
-    padding-top: 400px;
+    top: 400px;
     transition: 200ms;
 }
 
 #logo img:hover {
-    padding-top: 350px;
     transform: scale(1.2);
 }
 
@@ -115,6 +115,7 @@ html{
 /*SLIDER*/
 
 #slider_container{
+    position: relative;
     width: 100%;
     background-color: white;
 }
@@ -122,11 +123,12 @@ html{
 .bx-wrapper {
     width: 75% !important;
     max-width: 1920px !important;
+    max-height: 1080px !important;
     padding-top: 25px !important;
-    padding-left: 12.5% !important;
-    padding-right: 12.5% !important;
     border: 0px !important;
     margin-bottom: 0px !important;
+    margin-left: auto;
+    margin-right: auto;
     -webkit-box-shadow: 0 0 0px #ccc !important;
     box-shadow: 0 0 0px #ccc !important;
 }
