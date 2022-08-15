@@ -13,6 +13,11 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+    min-height: 100%;
+    height: 100%;
+}
+
 /*TOP BAR*/
 
 #topbar {
@@ -237,12 +242,13 @@ html{
 
 #scrolling_footer_container h3 {
     padding-top: 4px;
-    font-size: 14px;
+    padding-left: 25px;
+    font-size: 20px;
 }
 
 #scrolling_footer_container h3 a {
     text-decoration: none;
-    color: white;
+    color: rgb(173, 90, 184);
 }
 
 #footer_container_left {
@@ -288,16 +294,17 @@ html{
 
 #footer_container h3 {
     padding-top: 4px;
-    font-size: 14px;
+    padding-left: 25px;
+    font-size: 20px;
 }
 
 #footer_container h3 a {
     text-decoration: none;
-    color: white;
+    color: rgb(173, 90, 184);
 }
 
 #footer_menu li a:hover {
-    font-size: 27px;
+    font-size: 30px;
     color: red;
 }
 
