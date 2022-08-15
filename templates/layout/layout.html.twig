@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="{{asset ('assets/css/styles.css')}}">
+
+
+		<title>Brodeco S.L.</title>
+		<!--Slider-->
+		{% block sliderJS %}
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+			<script src="https://kit.fontawesome.com/263ec3510a.js" crossorigin="anonymous"></script>
+		{% endblock %}
+
+		{% block JS %}
+			<script type="text/javascript" src="{{asset ('assets/js/main.js')}}"></script>
+		{% endblock %}
+	</head>
+
+	<body>
+		<!--TOP-BAR-STAR-->
+		{% block topbar %}
+			<div id="topbar">
+				<nav>
+					<span id="logo_wrap"><img src="{{asset ('assets/images/logo_placeholder.png')}}" alt="logo"></span>
+					<ul id="menu">
+						<li>
+							<a href="{{ path ('inicio')}}">INICIO</a>
+						</li>
+						<li>
+							<a href="#project_container">PROYECTOS</a>
+						</li>
+						<li>
+							<a href="#aboutUs_container">SOBRE NOSOTROS</a>
+						</li>
+						<li>
+							<a href="{{path ('contacto')}}">CONTACTO</a>
+						</li>
+					</ul>
+				<div name="dropdown" id="dropdown">
+						<button id="button_dropdown">
+							<i class="fas fa-bars"></i>
+						</button>
+						<div id="dropdown_content">
+							<a href="{{path ('inicio')}}">Inicio</a>
+							<a href="">Proyectos</a>
+							<a href="">Sobre Nosotros</a>
+							<a href="{{path ('contacto')}}">Contacto</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		{% endblock %}
+		<!--TOPBAR END-->
+
+		{% block content %}{% endblock %}
+		<!--FOOTER-START-->
+
+		{% block footer %}
+
+			<div id="scrolling_footer_container">
+				<div id="footer_container_left">
+					<h1>CONTACTO</h1>
+					<h3>DIRECCIÓN:
+						<a href="
+												https://www.google.com/maps/place/Brodeco+Cerrajeros+S.L./@38.078323,-0.9937002,969m/data=!3m1!1e3!4m13!1m7!3m6!1s0xd639b9091e6b209:0xa43590ad5372d5f3!2sVereda+Riacho,+03311,+Alicante!3b1!8m2!3d38.0725491!4d-1.0099554!3m4!1s0x0:0xd4f96e9be724c4e3!8m2!3d38.0793941!4d-0.9943045
+												">Vereda Riacho, 03311 La Aparecida, Alicante</a>
+					</h3>
+					<h3>TELEFONOS: 626 67 08 18 / 686 62 36 81</h3>
+					<h3>CORREO ELECTRONICO: Brodecocerrajeros@hotmail.com</h3>
+				</div>
+				<div id="footer_container_rigt">
+					<ul id="footer_menu">
+						<li>
+							<a href="{{path ('inicio')}}">Inicio</a>
+						</li>
+						<li>
+							<a href="{{path ('contacto')}}">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="footer_container">
+				<div id="footer_container_left">
+					<h1>CONTACTO</h1>
+					<h3>DIRECCIÓN:
+						<a href="
+							                    https://www.google.com/maps/place/Brodeco+Cerrajeros+S.L./@38.078323,-0.9937002,969m/data=!3m1!1e3!4m13!1m7!3m6!1s0xd639b9091e6b209:0xa43590ad5372d5f3!2sVereda+Riacho,+03311,+Alicante!3b1!8m2!3d38.0725491!4d-1.0099554!3m4!1s0x0:0xd4f96e9be724c4e3!8m2!3d38.0793941!4d-0.9943045
+							                    ">Vereda Riacho, 03311 La Aparecida, Alicante</a>
+					</h3>
+					<h3>TELEFONOS: 626 67 08 18 / 686 62 36 81</h3>
+					<h3>CORREO ELECTRONICO: Brodecocerrajeros@hotmail.com</h3>
+				</div>
+				<div id="footer_container_right">
+					<ul id="footer_menu">
+						<li>
+							<a href="{{path ('inicio')}}">Inicio</a>
+						</li>
+						<li>
+							<a href="{{path ('contacto')}}">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		{% endblock %}
+
+		<!--FOOTER-END-->
+
+	</body>
+
+</html>

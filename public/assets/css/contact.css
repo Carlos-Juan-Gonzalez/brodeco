@@ -1,0 +1,125 @@
+/*MAP*/
+.phone{
+    display: none!important;
+}
+#content_wrap {
+    display: block;
+    float: left;
+    width: 100%;
+    padding-top: 200px;
+}
+
+.mapouter{
+    background-color:rgb(39, 38, 38);
+    display: block;
+    margin: auto;
+    height: 600px;
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#map_wrapper{
+display: block;
+float: right;
+padding-right: 20px;
+}
+
+#map_wrapper h1{
+    color: white;
+    text-align: center;
+}
+
+#map_wrapper p{
+    color: white;
+    text-align: center;
+}
+
+.gmap_canvas {
+    display: block;
+    margin: auto;
+    overflow: hidden;
+    background: none !important;
+    padding-top: 5px;
+    height: 500px;
+    width: 600px;
+}
+
+/*CONTACT INFO*/
+
+#info_wrap {
+    color: white;
+    text-align: center;
+    display: block;
+    float: left;
+    height: 600px;
+    width: 800px;
+    padding-left: 5%;
+    padding-top: 25px;
+}
+/*MEDIA QUERIES*/
+
+@media (max-width: 1524px) {
+
+    .mapouter{
+        background-color:rgb(39, 38, 38);
+        display: block;
+        margin: auto;
+        height: 1250px;
+        width: 98%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #info_wrap {
+        color: white;
+        text-align: center;
+        display: block;
+        float: left;
+        height: 600px;
+        width: 800px;
+        padding-left: 10%;
+        padding-top: 75px;
+    }
+
+    #map_wrapper{
+        display: block;
+        float: left;
+        padding-left: 20%;
+    }
+}
+
+@media (max-width: 800px) {
+    .phone{
+        display: block !important;
+    }
+
+    .pc{
+        display: none !important;
+    }
+    
+    .mapouter{
+        width: auto ;
+        height: 900px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #info_wrap {
+        width: auto;
+        padding-top: 25px;
+        height: 300px;
+        font-size: 9px;
+        padding-left: 2px;
+    }
+
+    #map_wrapper{
+       width: 100%;
+       padding-left: 0px;
+       padding-right: 0px;
+    }
+
+    .gmap_canvas{
+        width: 80%;
+    }
+}

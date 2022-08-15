@@ -1,0 +1,43 @@
+{% extends "layout/layout.html.twig" %}
+
+
+{% block content %}
+	<link rel="stylesheet" href="{{asset ('assets/css/contact.css')}}">
+	<div id="content_wrap">
+		<div id="info_wrap">
+			<h1>Puedes contactarnos a traves de nuestros Telefonos o de nuestro Correo electrónico:</h1>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1>Telefono de oficina:</h1>
+			<h1>626 67 08 18
+			</h1>
+			<br>
+			<br>
+			<h1>Telefono de empresa:</h1>
+			<h1>686 62 36 81</h1>
+			<br>
+			<br>
+			<h1>Correo electrónico:</h1>
+			<h1>Brodecocerrajeros@hotmail.com</h1>
+		</div>
+		<div class="mapouter">
+			<div id="map_wrapper" class="pc">
+				<h1>Brodeco Cerrajeros S.L.</h1>
+				<p>Vereda Riacho, 03311 La Aparecida, Alicante</p>
+				<div class="gmap_canvas">
+					<iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=%20%20Brodeco%20Cerrajeros%20S.L.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+			<div id="map_wrapper" class="phone">
+				<h1>Brodeco Cerrajeros S.L.</h1>
+				<p>Vereda Riacho, 03311 La Aparecida, Alicante</p>
+				<div class="gmap_canvas">
+					<iframe width="300" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=%20%20Brodeco%20Cerrajeros%20S.L.&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+{% block footer %}{% endblock %}

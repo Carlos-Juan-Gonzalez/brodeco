@@ -1,0 +1,19 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+index:
+    path: /
+    controller: App\Controller\HomeController::index
+
+inicio:
+    path: /inicio
+    controller: App\Controller\HomeController::index
+
+proyectos:
+    path: /proyectos
+    controller: App\Controller\ProyectController::index
+
+contacto:
+    path: /contacto
+    controller: App\Controller\ContactoController::index
