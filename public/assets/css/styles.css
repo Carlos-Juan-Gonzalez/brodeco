@@ -156,6 +156,13 @@ body{
     background-color: white;
 }
 
+#aboutUs_wraper{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
 .aboutUs_info{
     float: left;
     width: 50%;
@@ -167,7 +174,6 @@ body{
 }
 
 .aboutUs_img{
-    padding-left: 12.5%;
     float: left;
     width: 25%;
 }
@@ -179,7 +185,7 @@ body{
     width: 60%;
     padding-left: 20%;
     padding-right: 20%;
-    height: 600px;
+    height: 700px;
 }
 
 .project_info{
@@ -340,6 +346,10 @@ body{
         margin: 0px auto;
         float: left;
     }
+    #footer_container_left h3{
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -390,12 +400,27 @@ body{
         color: black;
     }
 
-    
+    .aboutUs_img{
+        display: none;
+    }
+    .aboutUs_info{
+        width: 100%;
+    }
+    #footer_container_left h3{
+        font-size: 12px;
+    }
+
+    #footer_menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 10px;
+        transition: all 500ms;
+    }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 500px) {
     #footer_container_left h3{
-        font-size: 10px;
+        font-size: 8px;
     }
 
     #footer_container_left br{
@@ -405,7 +430,14 @@ body{
     #footer_menu li a {
         text-decoration: none;
         color: white;
-        font-size: 15px;
+        font-size: 10px;
         transition: all 500ms;
+    }
+
+    .aboutUs_img{
+        display: none;
+    }
+    .aboutUs_info{
+        width: 100%;
     }
 }

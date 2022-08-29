@@ -1,0 +1,161 @@
+#content_container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top: 150px;
+}
+
+#content_wrap{
+    background-color:rgb(39, 38, 38);
+    display: block;
+    margin: auto;
+    height: 1100px;
+    width: 98%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#info_wrap{
+    display: block;
+    float: left;
+   margin: auto;
+   width: 50%;
+   height: 700px;
+}
+
+#proyect_title{
+    color: snow;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 45px;
+}
+
+#proyect_date{
+    color: snow;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#proyect_text_wrap{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#proyect_text{
+    color: snow;
+    text-align: center;
+    font-size: 25px;
+}
+
+#mainfoto_container{
+    display: block;
+    float: left;
+   margin: auto;
+   width: 50%;
+   height: 700px;
+}
+
+#mainfoto_wrap {
+    height: 80%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 110px;
+}
+
+#mainfoto_wrap img{
+    max-width:100%;
+    max-height:100%;
+}
+
+
+
+#fotos_container{
+    display: block;
+    float: left;
+   margin: auto;
+   width: 100%;
+   height: 450px;
+}
+
+#foto_wrap{
+    height: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.foto{
+    display: block;
+    float: left;
+    display: flex;
+    height: 75%;
+    width: 33%;
+    justify-content: center;
+}
+
+.foto img{
+    max-width:100%;
+    max-height:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 500px) {
+
+    #content_wrap{
+        background-color:rgb(39, 38, 38);
+        height: 1900px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #info_wrap{
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 100%;
+       height: 500px;
+    }
+    #proyect_text_wrap{
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+
+    #mainfoto_container{
+        display: block;
+        float: left;
+       margin: auto;
+       width: 100%;
+       height: 500px;
+    }
+
+    #mainfoto_wrap {
+        height: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: none;
+    }
+    
+    #mainfoto_wrap img{
+        max-width:100%;
+        max-height:100%;
+    }
+    
+    .foto{
+        display: block;
+        float: left;
+        display: flex;
+        height: 75%;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+}

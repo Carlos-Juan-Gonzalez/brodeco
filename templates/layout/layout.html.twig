@@ -32,15 +32,21 @@
 						<li>
 							<a href="{{ path ('inicio')}}">INICIO</a>
 						</li>
-						<li>
-							<a href="#project_container">PROYECTOS</a>
-						</li>
-						<li>
-							<a href="#aboutUs_container">SOBRE NOSOTROS</a>
-						</li>
+						{% if contacto  %}
 						<li>
 							<a href="{{path ('contacto')}}">CONTACTO</a>
 						</li>
+						{% endif %}
+						{% if proyectos  %}
+						<li>
+							<a href="#project_container">PROYECTOS</a>
+						</li>
+						{% endif %}
+						{% if Sobrenosotros  %}
+						<li>
+							<a href="#aboutUs_container">SOBRE NOSOTROS</a>
+						</li>
+						{% endif %}
 					</ul>
 				<div name="dropdown" id="dropdown">
 						<button id="button_dropdown">

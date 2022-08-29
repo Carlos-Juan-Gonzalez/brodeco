@@ -1,4 +1,7 @@
 {% extends 'layout/layout.html.twig' %}
+{% set Sobrenosotros = true %}
+{% set proyectos = true %}
+{% set contacto = true %}
 {% block content %}
 	<div id="header_container">
 		<header id="header">
@@ -16,16 +19,18 @@
 	</div>
 
 	<div id="aboutUs_container">
-		<div class="aboutUs_info">
-			<h1>¿QUIÉNES SOMOS?</h1>
-			<br>
-			<p>Brodeco Cerrajeros, S.L. se creo en el 2009, siguiendo los pasos de brodeco, C.B., creando en conjunto una experiencia en el sector de más de 30 años.</p>
-			<br>
-			<p>La actualización a esta nueva sociedad se debe a las nuevas tendecias de los mercados y metodos de obra, pero este cambio y la colaboración con otros sectores estrategicos del sector nos permiten consolidarnos en todos los proyectos en los que trabajamos.
-			</p>
-		</div>
-		<div class="aboutUs_img">
-			<img src="{{asset ('assets/images/operariofazendobarra.jpg')}}" alt="operio metalurgico">
+		<div id="aboutUs_wraper">
+			<div class="aboutUs_info">
+				<h1>¿QUIÉNES SOMOS?</h1>
+				<br>
+				<p>Brodeco Cerrajeros, S.L. se creo en el 2009, siguiendo los pasos de brodeco, C.B., creando en conjunto una experiencia en el sector de más de 30 años.</p>
+				<br>
+				<p>La actualización a esta nueva sociedad se debe a las nuevas tendecias de los mercados y metodos de obra, pero este cambio y la colaboración con otros sectores estrategicos del sector nos permiten consolidarnos en todos los proyectos en los que trabajamos.
+				</p>
+			</div>
+			<div class="aboutUs_img">
+				<img src="{{asset ('assets/images/operariofazendobarra.jpg')}}" alt="operio metalurgico">
+			</div>
 		</div>
 	</div>
 
@@ -35,43 +40,12 @@
 			<br>
 			<p>Los proyectos más recientes en los que hemos trabajado</p>
 		</div>
-		<div class="project_img_wrapper">
+		{% for proyecto in proyecto %}
+		
 			<div class="project_img">
-				<a href="{{path ('proyectos')}}">
-					<div class="overlay">proyecto 1</div>
-					<img src="{{asset ('assets/images/proyecto_placeholder.jpg')}}" alt="placeholder">
-				</a>
+					<div class="overlay">{{proyecto.nombre}}</div>
+					<a href="{{path("proyectos", {"id":proyecto.id})}}"><img src="../assets/images/{{proyecto.imagen}}.jpg" alt="placeholder"></a>
 			</div>
-			<div class="project_img">
-				<a href="{{path ('proyectos')}}">
-					<div class="overlay">proyecto 1</div>
-					<img src="{{asset ('assets/images/proyecto_placeholder.jpg')}}" alt="placeholder">
-				</a>
-			</div>
-			<div class="project_img">
-				<a href="{{path ('proyectos')}}">
-					<div class="overlay">proyecto 1</div>
-					<img src="{{asset ('assets/images/proyecto_placeholder.jpg')}}" alt="placeholder">
-				</a>
-			</div>
-			<div class="project_img">
-				<a href="{{path ('proyectos')}}">
-					<div class="overlay">proyecto 1</div>
-					<img src="{{asset ('assets/images/proyecto_placeholder.jpg')}}" alt="placeholder">
-				</a>
-			</div>
-			<div class="project_img">
-				<a href="{{path ('proyectos')}}">
-					<div class="overlay">proyecto 1</div>
-					<img src="{{asset ('assets/images/proyecto_placeholder.jpg')}}" alt="placeholder">
-				</a>
-			</div>
-			<div class="project_img">
-				<a href="{{path ('proyectos')}}">
-					<div class="overlay">proyecto 1</div>
-					<img src="{{asset ('assets/images/proyecto_placeholder.jpg')}}" alt="placeholder">
-				</a>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
 {% endblock %}

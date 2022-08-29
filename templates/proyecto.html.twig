@@ -1,7 +1,48 @@
 {% extends "layout/layout.html.twig" %}
-
-
+{% set Sobrenosotros = false %}
+{% set proyectos = false %}
+{% set contacto = true %}
 {% block content %}
 
+	<link rel="stylesheet" href="{{asset ('assets/css/proyect.css')}}">
+	<div id="content_container">
+        <div id="content_wrap">
+            
+            {% for proyecto in proyecto %}
+            {% if proyecto.id == id %}
+            <div id="info_wrap">
+                <h1 id="proyect_title">{{proyecto.nombre}}</h1>
+                <h3 id="proyect_date">{{proyecto.fecha}}</h3>
+                <div id="proyect_text_wrap">
+                    <span id="proyect_text" >{{proyecto.descripcion}}</span>
+                </div>
+            </div>
+
+            <div id="mainfoto_container">
+                <div id="mainfoto_wrap">
+                    <img src="../assets/images/{{proyecto.imagen}}.jpg" alt="fotoproyecto">
+                </div>
+            </div>
+
+            <div id="fotos_container">
+                <div id="foto_wrap">
+                    <div class="foto">
+                        <img src="../assets/images/{{proyecto.imagen}}1.jpg">
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/images/{{proyecto.imagen}}2.jpg">
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/images/{{proyecto.imagen}}3.jpg">
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            {% endfor %}
+
+        </div>
+	</div>
+
 {% endblock %}
+
 {% block footer %}{% endblock %}

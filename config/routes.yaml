@@ -11,7 +11,7 @@ inicio:
     controller: App\Controller\HomeController::index
 
 proyectos:
-    path: /proyectos
+    path: /proyectos/{id}
     controller: App\Controller\ProyectController::index
 
 contacto:
